@@ -46,10 +46,13 @@ Task B: Analysis with Normalization
         n_estimators: 300
     Best model accuracy: 0.8913
 
-Results Comparison
-Metric	Non-normalized	Normalized
-Initial Accuracy	0.8641	0.8750
-Best Model Accuracy	0.8859	0.8913
-Best Parameters	{200 trees}	{300 trees}
+## Results Comparison
+
+| Metric                  | Non-normalized | Normalized   |
+|-------------------------|----------------|--------------|
+| Initial Accuracy         | 0.8641         | 0.8750       |
+| Best Model Accuracy      | 0.8859         | 0.8913       |
+| Best Parameters          | `max_depth: 10, min_samples_leaf: 1, min_samples_split: 2, n_estimators: 200` | `max_depth: 10, min_samples_leaf: 1, min_samples_split: 2, n_estimators: 300` |
+
 
 Normalization slightly improved the model's performance, especially after hyperparameter tuning.
